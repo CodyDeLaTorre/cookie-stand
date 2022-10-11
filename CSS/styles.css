@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(61, 59, 59);
+  
+}
+
+main{
+  margin: auto;
+  width: 10rem;
+  height:10rem;
+  background-color: azure;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+h1 {
+  margin: auto;
+  text-align: center;
+}
+
+div {
+  margin: auto;
+}
+
+nav {
+  text-align: center;
+}
+
+ul {
+  border: 10px;
+  border-color: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display: inline;
+  text-align: center;
+  padding: 14px 16px;
+}
