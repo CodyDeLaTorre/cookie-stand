@@ -1,20 +1,19 @@
 body {
-  background-color: rgb(61, 59, 59);
+  background-color: #999491;
   
 }
 
 main{
   margin: auto;
-  width: 10rem;
-  height:10rem;
-  background-color: azure;
+  width: 75%;
+  height: 50rem;
+  background-color: #e2dddd;
 }
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 
 }
 h1 {
@@ -44,3 +43,6 @@ li {
   text-align: center;
   padding: 14px 16px;
 }
+
+
+/* Sales Data Specific */

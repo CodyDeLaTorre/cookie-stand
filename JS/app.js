@@ -15,15 +15,19 @@ let seattle = {
   dailyTotal: 0,
   getRandomCustomers: function () {
     return Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
-  }
+  },
+  calcHourlySales: function () {
+    for (let i = 0; i < hours.length; i++) {
+      let cookiesPurchased = this.getRandomCustomers() * this.avg;
+      this.cookiesSoldPerHourArr.push(Math.trunc(cookiesPurchased));
+    }
 
+  },
 };
 
-for (let i = 0; i < hours.length; i++) {
-  let cookiesPurchased = seattle.getRandomCustomers() * seattle.avg;
-  seattle.cookiesSoldPerHourArr.push(Math.trunc(cookiesPurchased));
-}
-for(let j = 0; j < seattle.cookiesSoldPerHourArr.length; j++){
+seattle.calcHourlySales();
+
+for (let j = 0; j < seattle.cookiesSoldPerHourArr.length; j++) {
   seattle.dailyTotal += seattle.cookiesSoldPerHourArr[j];
 }
 
@@ -52,7 +56,7 @@ function listItem() {
 listItem();
 let seattleTotal = document.createElement('li');
 firstSalesData.appendChild(seattleTotal);
-seattleTotal.textContent=`Today's total is ${seattle.dailyTotal}.`;
+seattleTotal.textContent = `Today's total is ${seattle.dailyTotal}.`;
 
 //location two
 
@@ -65,15 +69,19 @@ let tokyo = {
   dailyTotal: 0,
   getRandomCustomers: function () {
     return Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
+  },
+  calcHourlySales: function () {
+    for (let i = 0; i < hours.length; i++) {
+      let cookiesPurchased = this.getRandomCustomers() * this.avg;
+      this.cookiesSoldPerHourArr.push(Math.trunc(cookiesPurchased));
+    }
   }
 
 };
 
-for (let i = 0; i < hours.length; i++) {
-  let cookiesPurchased = tokyo.getRandomCustomers() * tokyo.avg;
-  tokyo.cookiesSoldPerHourArr.push(Math.trunc(cookiesPurchased));
-}
-for(let j = 0; j < tokyo.cookiesSoldPerHourArr.length; j++){
+tokyo.calcHourlySales();
+
+for (let j = 0; j < tokyo.cookiesSoldPerHourArr.length; j++) {
   tokyo.dailyTotal += tokyo.cookiesSoldPerHourArr[j];
 }
 
@@ -103,7 +111,7 @@ listItem2();
 
 let tokyoTotal = document.createElement('li');
 secondSalesData.appendChild(tokyoTotal);
-tokyoTotal.textContent=`Today's total is ${tokyo.dailyTotal}.`;
+tokyoTotal.textContent = `Today's total is ${tokyo.dailyTotal}.`;
 
 // location three
 
@@ -116,15 +124,20 @@ let dubai = {
   dailyTotal: 0,
   getRandomCustomers: function () {
     return Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
+  },
+  calcHourlySales: function () {
+    for (let i = 0; i < hours.length; i++) {
+      let cookiesPurchased = this.getRandomCustomers() * this.avg;
+      this.cookiesSoldPerHourArr.push(Math.trunc(cookiesPurchased));
+    }
+
   }
 
 };
 
-for (let i = 0; i < hours.length; i++) {
-  let cookiesPurchased = dubai.getRandomCustomers() * dubai.avg;
-  dubai.cookiesSoldPerHourArr.push(Math.trunc(cookiesPurchased));
-}
-for(let j = 0; j < dubai.cookiesSoldPerHourArr.length; j++){
+dubai.calcHourlySales();
+
+for (let j = 0; j < dubai.cookiesSoldPerHourArr.length; j++) {
   dubai.dailyTotal += dubai.cookiesSoldPerHourArr[j];
 }
 
@@ -153,7 +166,7 @@ function listItem3() {
 listItem3();
 let dubaiTotal = document.createElement('li');
 thirdSalesData.appendChild(dubaiTotal);
-dubaiTotal.textContent=`Today's total is ${dubai.dailyTotal}.`;
+dubaiTotal.textContent = `Today's total is ${dubai.dailyTotal}.`;
 
 // location four
 
@@ -166,15 +179,19 @@ let paris = {
   dailyTotal: 0,
   getRandomCustomers: function () {
     return Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
-  }
+  },
+  calcHourlySales: function () {
+    for (let i = 0; i < hours.length; i++) {
+      let cookiesPurchased = this.getRandomCustomers() * this.avg;
+      this.cookiesSoldPerHourArr.push(Math.trunc(cookiesPurchased));
+    }
 
+  }
 };
 
-for (let i = 0; i < hours.length; i++) {
-  let cookiesPurchased = paris.getRandomCustomers() * paris.avg;
-  paris.cookiesSoldPerHourArr.push(Math.trunc(cookiesPurchased));
-}
-for(let j = 0; j < paris.cookiesSoldPerHourArr.length; j++){
+paris.calcHourlySales();
+
+for (let j = 0; j < paris.cookiesSoldPerHourArr.length; j++) {
   paris.dailyTotal += paris.cookiesSoldPerHourArr[j];
 }
 
@@ -203,7 +220,7 @@ function listItem4() {
 listItem4();
 let parisTotal = document.createElement('li');
 fourthSalesData.appendChild(parisTotal);
-parisTotal.textContent=`Today's total is ${paris.dailyTotal}.`;
+parisTotal.textContent = `Today's total is ${paris.dailyTotal}.`;
 
 //location five
 let lima = {
@@ -215,15 +232,19 @@ let lima = {
   dailyTotal: 0,
   getRandomCustomers: function () {
     return Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
-  }
+  },
+  calcHourlySales: function () {
+    for (let i = 0; i < hours.length; i++) {
+      let cookiesPurchased = this.getRandomCustomers() * this.avg;
+      this.cookiesSoldPerHourArr.push(Math.trunc(cookiesPurchased));
+    }
 
+  }
 };
 
-for (let i = 0; i < hours.length; i++) {
-  let cookiesPurchased = lima.getRandomCustomers() * lima.avg;
-  lima.cookiesSoldPerHourArr.push(Math.trunc(cookiesPurchased));
-}
-for(let j = 0; j < lima.cookiesSoldPerHourArr.length; j++){
+lima.calcHourlySales();
+
+for (let j = 0; j < lima.cookiesSoldPerHourArr.length; j++) {
   lima.dailyTotal += lima.cookiesSoldPerHourArr[j];
 }
 
@@ -252,4 +273,4 @@ function listItem5() {
 listItem5();
 let limaTotal = document.createElement('li');
 fifthSalesData.appendChild(limaTotal);
-limaTotal.textContent=`Today's total is ${lima.dailyTotal}.`;
+limaTotal.textContent = `Today's total is ${lima.dailyTotal}.`;
