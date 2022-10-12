@@ -4,7 +4,7 @@ const salesTable = document.querySelector('tbody');
 const salesHead = document.querySelector('thead');
 //const SalesFoot = document.querySelector('tfoot');
 
-//let storeArr = [];
+let storeArr = [];
 let hours = ['6 am', '7 am', '8 am', '9 am', '10 am', '11 am', '12 pm', '1 pm', '2 pm', '3 pm', '4 pm', '5 pm', '6 pm', '7 pm'];
 
 function City(name, min, max, avg) {
@@ -14,7 +14,7 @@ function City(name, min, max, avg) {
   this.avg = avg;
   this.cookiesSoldPerHourArr = [];
   this.dailyTotal = 0;
-  //storeArr.push(this.dailyTotal);
+  storeArr.push(this);
 }
 
 City.prototype.allMath = function () {
