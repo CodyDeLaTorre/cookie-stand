@@ -2,7 +2,7 @@
 
 const salesTable = document.querySelector('tbody');
 const salesHead = document.querySelector('thead');
-//const SalesFoot = document.querySelector('tfoot');
+const SalesFoot = document.querySelector('tfoot');
 
 let storeArr = [];
 let hours = ['6 am', '7 am', '8 am', '9 am', '10 am', '11 am', '12 pm', '1 pm', '2 pm', '3 pm', '4 pm', '5 pm', '6 pm', '7 pm'];
@@ -29,14 +29,22 @@ City.prototype.allMath = function () {
   }
 };
 
-/*City.prototype.totalOfTotals = function () {
+let totalOfTotals = function () {
+  let totalOfTotals = 0;
   for (let i = 0; i < hours.length; i++) {
-    let totalOfTotals = 0;
+    let hourlyTotal = 0;
     for (let j = 0; j < storeArr.length; j++) {
-      totalOfTotals += storeArr[j].cookiesSoldPerHourArr[i]];
+      hourlyTotal += storeArr[j].cookiesSoldPerHourArr[i];
     }
+    totalOfTotals += hourlyTotal;
+    let footdata = document.createElement('td');
+    footdata.textContent = hourlyTotal;
+    SalesFoot.appendChild(footdata);
   }
-};*/
+  let footTotal = document.createElement('td');
+  footTotal.textContent = totalOfTotals;
+  SalesFoot.appendChild(footTotal);
+};
 
 //table head
 let th = document.createElement('th');
@@ -69,14 +77,9 @@ City.prototype.createData = function () {
 
 //table foot
 
-/*let td = document.createElement('td');
+let td = document.createElement('td');
 td.textContent = 'Totals';
 SalesFoot.appendChild(td);
-for (let i = 0; i < hours.length; i++) {
-  let footdata = document.createElement('td');
-  footdata.textContent = storeArr[];
-  SalesFoot.appendChild(footdata);
-}*/
 // location one
 
 let seattle = new City('Seattle', 23, 65, 6.3);
@@ -106,3 +109,5 @@ paris.createData();
 let lima = new City('Lima', 2, 16, 4.6);
 lima.allMath();
 lima.createData();
+
+totalOfTotals();
