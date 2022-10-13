@@ -1,25 +1,27 @@
+header nav {
+width: 850px;
+margin:auto;
+align-items: center;
+display: flex;
+flex-direction: row;
+}
+
+
 body {
   background-color: #999491;
 }
 
 main{
   margin: auto;
-  margin-top: 1rem;
-  width: 75%;
-  height: 50rem;
+  margin: 10px auto 0px;
+  width: 850px;
   background-color: #e2dddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-#data {
-  width: fit-content;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-}
 h1, h2 ,h3 ,h4 ,h5, h6 {
   margin: auto;
   text-align: center;
@@ -27,15 +29,11 @@ h1, h2 ,h3 ,h4 ,h5, h6 {
 
 }
 
-div {
-  margin: auto;
-}
-
 nav {
   text-align: center;
 }
 
-ul {
+nav ul {
   border-color: black;
   list-style-type: none;
   margin: 0;
@@ -43,7 +41,7 @@ ul {
   overflow: hidden;
 }
 
-li {
+nav li {
   border: solid;
   border-width: 3px;
   display: inline-block;
@@ -60,7 +58,39 @@ a:visited {
   color: black;
 }
 
+section {
+  height: 324px;
+  width: 450px;
+  overflow: auto;
+  text-align: center;
+}
+
+section ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer {
+  margin: 0px auto 0px;
+  height: 50px;
+  text-align: center;
+  width: 850px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  background-color: #e2dddd;
+}
+
+footer img{
+  width: 200px;
+  height: 50px;
+}
+
 /* Sales Data Specific */
+#data {
+  width: fit-content;
+}
 
 table, td , th {
   border : 1px solid black;
