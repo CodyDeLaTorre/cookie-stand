@@ -8,14 +8,14 @@ flex-direction: row;
 
 
 body {
-  background-color: #999491;
+  background-color: #A46D7B;
 }
 
 main{
   margin: auto;
   margin: 10px auto 0px;
   width: 850px;
-  background-color: #e2dddd;
+  background-color: #8C6871;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -79,7 +79,7 @@ footer {
   align-items: center;
   display: flex;
   flex-direction: row;
-  background-color: #e2dddd;
+  background-color: #8C6871;
 }
 
 footer img{
