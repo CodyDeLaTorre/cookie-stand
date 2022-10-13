@@ -87,9 +87,36 @@ footer img{
   height: 50px;
 }
 
-/* Sales Data Specific */
+/* Sales Data Page Specific */
+
+form {
+  border: 3px solid black;
+  height: 340px;
+  width: 300px;
+  margin: 20px 20px 20px 20px;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+
+label, input{
+  display: block;
+  margin: .5rem auto;
+}
+
+form h3 {
+  border: 1px solid black;
+  padding: .2rem;
+  margin: 25px 40px 20px;
+  font-weight: 700;
+  font-size: large;
+}
+
 #data {
-  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: center;
 }
 
 table, td , th {
@@ -97,18 +124,27 @@ table, td , th {
 }
 
 table {
-  margin: 2rem;
-  margin-left: auto;
-  margin-right: auto;
+  width: 70%;
+  margin: 2rem 20px;
   font-family: Arial;
   background-color: #C2BBB8;
 
 }
 
-td, th {
-  padding: 1rem;
-}
-
 thead th{
   font-weight: bold;
 }
+
+
+input {
+  background-color: #9F7B84;
+  border-color: black;
+}
+
+
+@media screen and (min-width: 1270px){
+  td, th {
+    padding: 1rem;
+  }
+  
+};

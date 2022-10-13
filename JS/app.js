@@ -75,11 +75,6 @@ City.prototype.createData = function () {
   tr.appendChild(td2);
 };
 
-//table foot
-
-let td = document.createElement('td');
-td.textContent = 'Totals';
-SalesFoot.appendChild(td);
 // location one
 
 let seattle = new City('Seattle', 23, 65, 6.3);
@@ -109,5 +104,33 @@ paris.createData();
 let lima = new City('Lima', 2, 16, 4.6);
 lima.allMath();
 lima.createData();
+
+
+let form = document.querySelector('form');
+let handleSubmit = function(e){
+  console.log('it worked')
+  e.preventDefault();
+
+  let name = e.target.location.value;
+  let min = parseInt(e.target.minCustomers.value);
+  let max = parseInt(e.target.maxCustomers.value);
+  let avg = parseInt(e.target.average.value);
+
+  let newCity = new City(name, min, max, avg);
+  console.log(newCity);
+
+  newCity.allMath();
+  newCity.createData();
+};
+
+form.addEventListener('submit', handleSubmit);
+
+
+//table foot
+
+let td = document.createElement('td');
+td.textContent = 'Totals';
+SalesFoot.appendChild(td);
+
 
 totalOfTotals();
