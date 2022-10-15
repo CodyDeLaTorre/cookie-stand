@@ -1,3 +1,7 @@
+header {
+  background-color: #8C6871;
+}
+
 header nav {
 width: 850px;
 margin:auto;
@@ -13,20 +17,27 @@ body {
 
 main{
   margin: auto;
-  margin: 10px auto 0px;
   width: 850px;
   background-color: #8C6871;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  font-family: 'Times New Roman', Times, serif
 }
 
 h1, h2 ,h3 ,h4 ,h5, h6 {
   margin: auto;
   text-align: center;
-  font-family: 'Inter' sans-serif;
+  font-family: 'Secular One', sans-serif;
+  color:#301a1a
 
+}
+
+h2 {
+  font-size:x-large;
+  font-weight: 700;
+  margin-top: 10px;;
 }
 
 nav {
@@ -58,7 +69,14 @@ a:visited {
   color: black;
 }
 
+
+#pictures {
+  display: flex;
+  margin: auto;
+}
+
 section {
+  margin: auto;
   height: 324px;
   width: 450px;
   overflow: auto;
@@ -126,8 +144,9 @@ table, td , th {
 table {
   width: 70%;
   margin: 2rem 20px;
-  font-family: Arial;
-  background-color: #C2BBB8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #301a1a;
+  color: rgb(199, 126, 43)
 
 }
 
